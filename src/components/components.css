@@ -1,0 +1,100 @@
+body {
+  margin: 40px;
+  background-color: black;
+}
+
+.heading {
+  padding-top: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  position: sticky;
+  top: 0;
+  font-family: "Rubik Vinyl", cursive;
+}
+
+.card-container {
+  /* background-color: white; */
+  width: 100%;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  font-family: "Mali", cursive;
+
+  /*Animation*/
+  background: #33cccc; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+}
+
+/*Card container animation*/
+@keyframes color {
+  0% {
+    background: #33cccc;
+  }
+  20% {
+    background: #33cc36;
+  }
+  40% {
+    background: #b8cc33;
+  }
+  60% {
+    background: #fcca00;
+  }
+  80% {
+    background: #33cc36;
+  }
+  100% {
+    background: #33cccc;
+  }
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+.card:hover {
+  background-color: white;
+  color: black;
+}
+
+img {
+  border-radius: 8px;
+  height: 300px;
+  width: 200px;
+}
+
+h3 {
+  resize: both;
+}
+
+.watch-now-button {
+  background-color: black;
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.watch-now-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.anime-name{
+  overflow:auto
+}
