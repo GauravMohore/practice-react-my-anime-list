@@ -8,10 +8,11 @@ export default function CardContainer() {
         {SetData.map((val) => {
           return (
             <Card
+              key={val.id}
               img={val.img}
               title={val.title}
               name={val.name}
-              link={val.links}
+              links={val.links}
             />
           );
         })}

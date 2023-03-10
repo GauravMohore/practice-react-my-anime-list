@@ -1,5 +1,7 @@
 import React from "react";
 import "./components.css";
+import Image from "./CardComponents/Image";
+import CardInfo from "./CardComponents/CardInfo";
 // import SetData from "./SetData";
 
 export default function Card(props) {
@@ -7,14 +9,8 @@ export default function Card(props) {
     <>
       <div className="cards">
         <div className="card">
-          <img src={props.img} alt="mypic" className="card_image" />
-          <div className="card_info">
-            <span className="">{props.title}</span>
-            <h3 className="anime-name">{props.name}</h3>
-            <a href="/" target="blank">
-              <button className="watch-now-button">Watch Now</button>
-            </a>
-          </div>
+          <Image img={props.img} />
+          <CardInfo title={props.title} name={props.name} links={props.links} />
         </div>
       </div>
     </>

@@ -79,6 +79,8 @@ img {
 
 h3 {
   resize: both;
+  height: 30px;
+    font-size: inherit;
 }
 
 .watch-now-button {
