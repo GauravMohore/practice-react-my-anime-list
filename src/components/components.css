@@ -3,6 +3,10 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+.small-case{
+  display: none;
+}
+
 .heading {
   padding-top: 0;
   background-color: white;
@@ -110,9 +114,30 @@ h3 {
 }
 
 @media (max-width: 1230px) {
+  .card-container{
+    height: auto;
+  }
   .cards {
     width: auto;
   }
+}
+
+@media(max-width: 240px){
+  .heading{
+    display:none;
+  }
+  .card-container{
+    display: none;
+  }
+  .small-case{
+    display: flex;
+    justify-content: center;
+    color:white;
+  }
+  .sc-span{
+    color: red;
+  }
+
 }
 /* .anime-name{
   overflow:auto
