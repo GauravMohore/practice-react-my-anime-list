@@ -25,10 +25,8 @@ body {
   /* background-color: white; */
   width: 100%;
   border: 2px solid black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
   font-family: "Mali", cursive;
 
   /*Animation*/
@@ -59,10 +57,6 @@ body {
   }
 }
 
-.cards {
-  width: 18%;
-}
-
 .card {
   width: 200px;
   margin: 10px;
@@ -86,7 +80,7 @@ img {
 h3 {
   resize: both;
   height: 30px;
-  font-size: inherit;
+    font-size: inherit;
 }
 
 .watch-now-button {
@@ -109,11 +103,6 @@ h3 {
   border: 2px solid black;
 }
 
-@media (max-width: 1230px) {
-  .cards {
-    width: auto;
-  }
-}
 /* .anime-name{
   overflow:auto
 } */
